@@ -37,7 +37,7 @@
         </div>
         <div class="content">
             Go to "Applications" and register a new "Regular Web Application". You can give it any name, for example
-            "Pizza0".
+            "CIC Workshop".
         </div>
     </section>
     <section id="auth0" class="list">
@@ -57,11 +57,6 @@
             Follow the guidance on screen to set up your integration.
             <br><br> Hints:
             <details>
-                <summary>Read this if you are using a Cloud9 environment</summary>
-                <p>As you are running in a cloud environment, you have to specify another URL as the base URL and redirect URL. In Cloud9, start your server by typing <code>node server.js</code> into your console, click on "Preview" and "Preview running application". In the window that opens, click on the "Extend" icon (next to the "Browser" button) to open your preview in a standalone website. Copy the URL of that site and set is as a callback URL (with <i>/callback</i> appended), and as your logout URL. Also set it as base URL in the code you are copying over.
-                </p>
-            </details><br>
-            <details>
                 <summary>Configuration</summary>
                 <p>(Only applies if you're running this lab on your machine) <br>
                     Our server is running on http://localhost:3000, and the SDK will automatically register a new
@@ -69,15 +64,6 @@
                     be redirected to after successful login)
                     and logout URL.
                 </p>
-            </details>
-            <br>
-            <details>
-                <summary>Installing dependencies</summary>
-                <p>
-                    To install the Node.js package, open your terminal and paste the provided
-                    statement<br><code>npm install express express-openid-connect --save</code>
-                </p>
-
             </details>
             <br>
             <details>
@@ -101,7 +87,7 @@
             5
         </div>
         <div class="content">
-            Save your project and start it up (by typing <code>node server.js</code> into your terminal). Then navigate to http://localhost:3000 (or click on "Preview" and extend to a standalone tab if you are working in Cloud9)
+            Save your project and start it up (by typing <code>node server.js</code> into your terminal). Then navigate to http://localhost:3000 
             and click on login. You can now sign in with your Auth0 credentials, and a consent screen should appear that
             you can accept.
         </div>
