@@ -18,8 +18,8 @@
     </header>
 
     <section id="overview">
-        Now that individual users can access the service, we have to think about bringing in our corporate users. Pizza0 already could win their first customer who provide their own Identity provider. You are asked to enable users from that organization to log
-        into Pizza0 using Single Sign On.
+        Now that individual users can access the service, we have to think about bringing in our corporate users. Your B2B SaaS App already could win their first customer who provide their own Identity provider. You are asked to enable users from that organization to log
+        into your B2B SaaS App using Single Sign On.
     </section>
     <section id="auth0" class="list">
         <div class="number">
@@ -52,7 +52,7 @@
         </div>
         <div class="content">
             To make sure users are actually redirected to your new organization, click on "Login Experience" in your newly created connection. Add the domain of your newly created user into the "Identity Provider Domains" (e.g. example.com if your user was called
-            test@example.com) and click on "Save" on the bottom of the page. Lastly, go to "Applications" and make sure your connection is enabled for your Pizza0 application.
+            test@example.com) and click on "Save" on the bottom of the page. Lastly, go to "Applications" and make sure your connection is enabled for your B2B SaaS App.
         </div>
     </section>
     <section id="auth0" class="list">
@@ -87,7 +87,7 @@
             6
         </div>
         <div class="content">
-            Lastly, we need to let our Pizza0 application know that we expect business users to sign in instead of everyday end users. Find your application by navigating to "Applications" -> "Applications" in the Auth0 Dashboard and click on the application you
+            Lastly, we need to let our B2B SaaS App know that we expect business users to sign in instead of everyday end users. Find your application by navigating to "Applications" -> "Applications" in the Auth0 Dashboard and click on the application you
             have registered previously. In the following window you will find a tab called "Organizations". Navigate to that, enable the Display Organization Prompt and set the dropdown to "Team members of organizations".
             <br><br> Note: Eventually the option to enable organizations will be greyed out. There will be a warning box that some login grants have to be disabled first. Click on "Disable Grants Now" and proceed.
         </div>
@@ -97,8 +97,8 @@
             7
         </div>
         <div class="content">
-            Return to your Pizza0 site and click on login. You will now be asked to enter your organizations name (which is the one you gave to your organization when you registered it). The login will automatically redirect you to your Identity Provider (aka Okta
-            if you follow the lab), where you can sign in with your users credentials. After successful login you should now have an organization ID displayed in the header of the Pizza0 site.
+            Return to your B2B SaaS App site and click on login. You will now be asked to enter your organizations name (which is the one you gave to your organization when you registered it). The login will automatically redirect you to your Identity Provider (aka Okta
+            if you follow the lab), where you can sign in with your users credentials. After successful login you should now have an organization ID displayed in the identity token.
         </div>
     </section>
     <section id="cta">

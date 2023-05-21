@@ -27,14 +27,13 @@
         </div>
         <div class="content">
             First we need a second organization with which we can try our collaboration scenario. Follow the steps specified in Lab 3 (link here). Make sure to specify a different user and organization name. Make sure that you also set metadata on the new organization,
-            with the key "license" and the value "premium" (again all lowercase). Log in using your new application, and observe that you can still order small and medium pizzas, but the large pizza is now not available any more due to your license. Make
-            sure that you sign in at least once with your new user into your application using your new organization!
+            with the key "license" and the value "premium" (again all lowercase). Log in using your new organization and check the idenity token. Make sure that you sign in at least once with your new user into your application using your new organization!
             <details>
                 <summary>Steps to complete:</summary>
                 <p>
                     <ul>
-                        <li>Create a new Identity Provider on <a href="https://okta-saas-lab-org-creator.herokuapp.com">https://okta-saas-lab-org-creator.herokuapp.com</a> and note down the returned information</li>
-                        <li>Integrate the Identity Provider as an Enterprise Connection to Auth0 and activate it for the Pizza0 application
+                        <li>Create a new Identity Provider on <a href="https://okta-cic-workshop-org-creator.herokuapp.com">https://okta-cic-workshop-org-creator.herokuapp.com</a> and note down the returned information</li>
+                        <li>Integrate the Identity Provider as an Enterprise Connection to Auth0 and activate it for the B2B SaaS App
                         </li>
                         <li>Create a new organization and activate the enterprise connection with auto-membership</li>
                         <li>Set your custom license metadata as "license": "premium"</li>
@@ -58,8 +57,7 @@
             2
         </div>
         <div class="content">
-            Log in again into Org A, but now choosing the connection created for Org B and the credentials of the second user you have created. You should still be able to sign in, and you should be able to order the large pizza now as Org A has a corporate license
-            which you can now leverage from your Org B.
+            Log in again into Org A, but now choosing the connection created for Org B and the credentials of the second user you have created. You should still be able to sign in, and you should be able to see the user can now leverage the license from Org A as a user from Org B.
         </div>
     </section>
     <section id="cta">
